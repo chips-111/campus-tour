@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>地图导览 - 校园导览</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span>校园导览</span>
+      </a>
+      <button class="hamburger" aria-label="菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="map.html" class="active">地图导览</a></li>
+          <li><a href="spots.html">景点介绍</a></li>
+          <li><a href="life.html">生活指南</a></li>
+          <li><a href="about.html">关于我们</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <h1>地图导览</h1>
+      <p>点击地图上的建筑，查看详细信息</p>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="campus-map-container">
+          <div class="campus-map">
+            <div class="map-green" style="width:120px;height:120px;top:60px;left:40px;"></div>
+            <div class="map-green" style="width:80px;height:80px;top:200px;left:300px;"></div>
+            <div class="map-green" style="width:100px;height:100px;top:350px;left:500px;"></div>
+            <div class="map-green" style="width:90px;height:90px;top:100px;right:200px;"></div>
+
+            <div class="map-road" style="width:100%;height:6px;top:170px;left:0;"></div>
+            <div class="map-road" style="width:100%;height:6px;top:320px;left:0;"></div>
+            <div class="map-road" style="width:6px;height:100%;top:0;left:200px;"></div>
+            <div class="map-road" style="width:6px;height:100%;top:0;left:450px;"></div>
+            <div class="map-road" style="width:6px;height:100%;top:0;left:700px;"></div>
+
+            <div class="map-building" style="top:50px;left:180px;background:#1a5276;"
+                 data-name="图书馆" data-category="教学设施" data-desc="图书馆是校园的学术中心，馆藏图书丰富，设有自习区、电子阅览室和学术报告厅，开放时间为7:00-22:30。">
+              📚 图书馆
+            </div>
+            <div class="map-building" style="top:50px;left:430px;background:#1a5276;"
+                 data-name="第一教学楼" data-category="教学设施" data-desc="第一教学楼是学校主要的教学场所之一，配备多媒体教室和智慧教室，承担大部分公共基础课程教学。">
+              🏫 第一教学楼
+            </div>
+            <div class="map-building" style="top:50px;left:680px;background:#1a5276;"
+                 data-name="第二教学楼" data-category="教学设施" data-desc="第二教学楼主要用于专业课教学，设有各类实验室和实训室，设备先进齐全。">
+              🏫 第二教学楼
+            </div>
+            <div class="map-building" style="top:120px;left:50px;background:#27ae60;"
+                 data-name="行政楼" data-category="行政办公" data-desc="行政楼是学校行政管理中心，设有校办、教务处、学工处等主要职能部门。">
+              🏢 行政楼
+            </div>
+            <div class="map-building" style="top:200px;left:180px;background:#e67e22;"
+                 data-name="一食堂" data-category="餐饮服务" data-desc="一食堂位于校园中心区域，提供各类中式快餐、面食和小吃，价格实惠，人均消费8-15元。">
+              🍜 一食堂
+            </div>
+            <div class="map-building" style="top:200px;left:430px;background:#e67e22;"
+                 data-name="二食堂" data-category="餐饮服务" data-desc="二食堂菜品丰富多样，设有特色窗口和清真窗口，满足不同饮食需求，人均消费8-15元。">
+              🍜 二食堂
+            </div>
+            <div class="map-building" style="top:200px;left:680px;background:#8e44ad;"
+                 data-name="男生宿舍区" data-category="住宿区域" data-desc="男生宿舍区含1-6号宿舍楼，四人间上床下桌，配备空调、热水器，每层设有公共洗衣房。">
+              🏠 男生宿舍区
+            </div>
+            <div class="map-building" style="top:280px;left:50px;background:#2980b9;"
+                 data-name="体育馆" data-category="体育设施" data-desc="体育馆内设篮球场、羽毛球场和乒乓球室，室外有标准田径场和足球场，免费对师生开放。">
+              🏟️ 体育馆
+            </div>
+            <div class="map-building" style="top:350px;left:180px;background:#8e44ad;"
+                 data-name="女生宿舍区" data-category="住宿区域" data-desc="女生宿舍区含7-12号宿舍楼，四人间上床下桌，配备独立卫浴、空调和热水器。">
+              🏠 女生宿舍区
+            </div>
+            <div class="map-building" style="top:350px;left:430px;background:#c0392b;"
+                 data-name="三顾广场" data-category="校园景点" data-desc="三顾广场是校园标志性景观，取意刘备三顾茅庐的典故，广场中央设有主题雕塑，是师生休憩和活动的重要场所。">
+              🏛️ 三顾广场
+            </div>
+            <div class="map-building" style="top:350px;left:680px;background:#27ae60;"
+                 data-name="校园超市" data-category="生活服务" data-desc="校园超市位于宿舍区旁，提供日用品、零食饮料和学习用品，营业时间7:00-22:00。">
+              🛒 校园超市
+            </div>
+            <div class="map-building" style="top:430px;left:50px;background:#2980b9;"
+                 data-name="实验楼" data-category="教学设施" data-desc="实验楼配备各类专业实验室，包括物理、化学、生物和计算机实验室，为实践教学提供保障。">
+              🔬 实验楼
+            </div>
+            <div class="map-building" style="top:430px;left:300px;background:#e67e22;"
+                 data-name="快递中心" data-category="生活服务" data-desc="快递中心集中收发各大快递公司包裹，取件时间9:00-20:00，支持菜鸟驿站自助取件。">
+              📦 快递中心
+            </div>
+            <div class="map-building" style="top:430px;left:550px;background:#27ae60;"
+                 data-name="校医院" data-category="生活服务" data-desc="校医院提供基本医疗服务和健康咨询，设有内科、外科和药房，急诊24小时值班。">
+              🏥 校医院
+            </div>
+
+            <div class="map-legend">
+              <h4>图例</h4>
+              <div class="map-legend-item"><div class="dot" style="background:#1a5276;"></div>教学设施</div>
+              <div class="map-legend-item"><div class="dot" style="background:#e67e22;"></div>餐饮服务</div>
+              <div class="map-legend-item"><div class="dot" style="background:#8e44ad;"></div>住宿区域</div>
+              <div class="map-legend-item"><div class="dot" style="background:#27ae60;"></div>生活服务</div>
+              <div class="map-legend-item"><div class="dot" style="background:#2980b9;"></div>体育/实验</div>
+              <div class="map-legend-item"><div class="dot" style="background:#c0392b;"></div>校园景点</div>
+            </div>
+          </div>
+
+          <div class="map-info-panel">
+            <button class="close-btn">&times;</button>
+            <h3>建筑名称</h3>
+            <span class="card-tag category">分类</span>
+            <p class="desc" style="margin-top:12px;">建筑介绍信息</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>校园建筑一览</h2>
+          <p>了解校园主要建筑与设施</p>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-img"><img src="images/index-3.jpg" alt="图书馆"></div>
+            <div class="card-body">
+              <h3>图书馆</h3>
+              <p>校园学术中心，馆藏丰富，设有自习区、电子阅览室和学术报告厅</p>
+              <span class="card-tag">教学设施</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img"><img src="images/index-2.jpg" alt="三顾广场"></div>
+            <div class="card-body">
+              <h3>三顾广场</h3>
+              <p>校园标志性景观，取意刘备三顾茅庐，设有主题雕塑和休闲区域</p>
+              <span class="card-tag">校园景点</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img"><img src="images/map-1.jpg" alt="体育馆"></div>
+            <div class="card-body">
+              <h3>体育馆</h3>
+              <p>室内篮球场、羽毛球场，室外标准田径场和足球场，免费开放</p>
+              <span class="card-tag">体育设施</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img"><img src="images/map-2.jpg" alt="实验楼"></div>
+            <div class="card-body">
+              <h3>实验楼</h3>
+              <p>配备物理、化学、生物和计算机实验室，保障实践教学</p>
+              <span class="card-tag">教学设施</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img"><img src="images/map-3.jpg" alt="行政楼"></div>
+            <div class="card-body">
+              <h3>行政楼</h3>
+              <p>学校行政管理中心，设有校办、教务处、学工处等部门</p>
+              <span class="card-tag">行政办公</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img"><img src="images/map-4.jpg" alt="教学楼群"></div>
+            <div class="card-body">
+              <h3>教学楼群</h3>
+              <p>第一、第二教学楼配备多媒体教室和智慧教室，承担各类课程教学</p>
+              <span class="card-tag">教学设施</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>校园导览</h4>
+          <p>为新生及访客提供便捷的校园信息查询与导航服务，让每一位来到校园的人都能快速了解校园。</p>
+        </div>
+        <div class="footer-col">
+          <h4>快速链接</h4>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="map.html">地图导览</a></li>
+            <li><a href="spots.html">景点介绍</a></li>
+            <li><a href="life.html">生活指南</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>联系方式</h4>
+          <ul>
+            <li><a href="#">地址：湖北省襄阳市襄城区隆中路296号</a></li>
+            <li><a href="#">电话：123456789</a></li>
+            <li><a href="#">邮编：123456</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 校园导览 | Web课程大作业</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="返回顶部">&#9650;</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
